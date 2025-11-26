@@ -1,0 +1,9 @@
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<title>Person</title>
+    <span th:text="${person.id}"> </span>
+    <span th:text="${person.firstName}"> </span>
+    <span th:text="${person.familyName}"> </span>
+    <a th:href="@{/person/edit/{id}(id=${person.id})}">Edit</a>
+    <a th:href="@{/person/delete/{id}(id=${person.id})}">Delete</a>
+</html>
+

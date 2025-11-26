@@ -1,0 +1,24 @@
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+
+<title>Edit</title>
+
+<form th:action="@{/person/edit/save}" th:object="${person}" method="post">
+    <input type="hidden" th:field="*{id}">
+
+    <p>
+        <label>First name:
+            <input type="text" th:field="*{firstName}">
+        </label>
+    </p>
+
+    <p>
+        <label>Family name:
+            <input type="text" th:field="*{familyName}">
+        </label>
+    </p>
+
+    <p>
+        <input type="submit" value="Save">
+    </p>
+</form>
+
