@@ -1,8 +1,0 @@
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<title>People</title>
-    <p th:each="person : ${personList}">
-        <a th:href="@{/person/{id} (id=${person.id})}">
-            <span th:text="${person.id} + ' - ' + ${person.firstName} + ' ' + ${person.familyName}"></span>
-        </a>
-    </p>
-</html>
